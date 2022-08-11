@@ -25,7 +25,7 @@ const ProjectCheckbox = ({ receiveProjects, projectsChecked }) => {
             <Form.Label>Project interests</Form.Label>
             <div key={`inline-checkbox`} className="mb-3">
                 {
-                    projectsChecked && projectsChecked.includes('Farm')
+                    projectsChecked?.includes('Farm')
                         ?
                         <Form.Check
                             inline
@@ -46,7 +46,7 @@ const ProjectCheckbox = ({ receiveProjects, projectsChecked }) => {
                 }
 
                 {
-                    projectsChecked && projectsChecked.includes('NGO')
+                    projectsChecked?.includes('NGO')
                         ?
                         <Form.Check
                             inline
@@ -67,7 +67,7 @@ const ProjectCheckbox = ({ receiveProjects, projectsChecked }) => {
                 }
 
                 {
-                    projectsChecked && projectsChecked.includes('School')
+                    projectsChecked?.includes('School')
                         ?
                         <Form.Check
                             inline
@@ -88,7 +88,7 @@ const ProjectCheckbox = ({ receiveProjects, projectsChecked }) => {
                 }
 
                 {
-                    projectsChecked && projectsChecked.includes('Hostel')
+                    projectsChecked?.includes('Hostel')
                         ?
                         <Form.Check
                             inline
@@ -109,7 +109,7 @@ const ProjectCheckbox = ({ receiveProjects, projectsChecked }) => {
                 }
 
                 {
-                    projectsChecked && projectsChecked.includes('Camping')
+                    projectsChecked?.includes('Camping')
                         ?
                         <Form.Check
                             inline
@@ -130,7 +130,7 @@ const ProjectCheckbox = ({ receiveProjects, projectsChecked }) => {
                 }
 
                 {
-                    projectsChecked && projectsChecked.includes('Other')
+                    projectsChecked?.includes('Other')
                         ?
                         <Form.Check
                             inline

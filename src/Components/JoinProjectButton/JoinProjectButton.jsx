@@ -10,6 +10,7 @@ const JoinButton = ({ project_id }) => {
         projectsService
             .requestsProject(project_id)
             .then(() => navigate(`/projects`))
+            .catch(err => console.log(err))
     }
     return (
         <Button id='join-button' size="sm" variant="success" onClick={handleClick}>Join</Button>
