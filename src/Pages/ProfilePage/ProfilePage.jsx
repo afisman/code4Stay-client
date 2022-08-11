@@ -113,7 +113,7 @@ const ProfilePage = () => {
                                                     <ListGroup.Item>-{response.username}: {response.bio}</ListGroup.Item>
                                                     <ButtonGroup>
                                                         <AcceptJoinButton user_id={response._id} />
-                                                        <DenyButton user_id={response._id} />
+                                                        <DenyButton user_id={response._id} owner_id={user_id} />
                                                     </ButtonGroup>
                                                 </div>
                                             )
