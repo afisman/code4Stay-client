@@ -1,5 +1,4 @@
 import { Form } from "react-bootstrap"
-import searchService from "../../Services/search.services"
 import ContinentButton from "./ContinentButton"
 
 const SearchBar = ({ receiveFilter }) => {

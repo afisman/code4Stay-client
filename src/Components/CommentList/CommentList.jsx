@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Card, Row, Col, Container } from "react-bootstrap"
+import { Card, Row, Col } from "react-bootstrap"
 import { Rating } from 'react-simple-star-rating'
 
 import './CommentList.css'
@@ -10,12 +10,15 @@ const CommentList = ({ testimonials }) => {
     const [comments, setComments] = useState([])
 
     useEffect(() => {
+        const loadComments = () => {
+            setComments(testimonials)
+        }
         loadComments()
     }, [testimonials])
 
-    const loadComments = () => {
-        setComments(testimonials)
-    }
+    // const loadComments = () => {
+    //     setComments(testimonials)
+    // }
     return (
         <>
             {
